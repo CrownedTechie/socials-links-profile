@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
@@ -18,33 +18,63 @@
     * {
       font-family: 'Inter';
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    .attribution { 
+      font-size: 11px;
+      text-align: center; 
+      color: white;
+    }
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
 
     .card {
       width: 20rem;
+      background: hsl(0, 0%, 12%);
+    }
+
+    .card-title {
+      font-size: 1.43rem;
     }
 
     .card-body > img {
       border-radius: 50%;
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
       max-width: 100%;
     }
 
+    .card-text {
+      color: hsl(75, 94%, 57%);
+    }
+
     .custom-font {
-      font-size: 14px;
+      font-size: .8rem;
     }
 
     .button-box {
       gap: .8rem;
-     
     }
 
     .button-box > button {
-      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 600;
       padding: 0.55rem 0.75rem;
+      background: hsl(0, 0%, 20%);
+      border: none;
+      color: white;
     }
+
+    .button-box > button:hover {
+      background: hsl(75, 94%, 57%);
+      color: black;
+    }
+
   </style>
 </head>
 <body class="container d-flex justify-content-center align-items-center flex-column vh-100">
@@ -52,13 +82,13 @@
   <main class="card p-2">
 
     <div class="card-body text-center">
-      <img src="./assets/images/avatar-jessica.jpeg" class=" mx-auto d-block" alt="...">
+      <img src="./assets/images/avatar-jessica.jpeg" class=" mx-auto d-block mt-2" alt="Jessica's profile picture">
 
-      <h1 class="card-title h2 mt-3">Jessica Randall</h1>
-      <h2 class="card-text custom-font">London, United Kingdom</h2>
-      <p class="custom-font mt-3">"Front-end developer and avid reader."</p>
+      <h1 class="card-title mt-4 text-light">Jessica Randall</h1>
+      <h2 class="card-text custom-font pb-1">London, United Kingdom</h2>
+      <p class="custom-font mt-3 mb-4 text-light px-md-1">"Front-end developer and avid reader."</p>
      
-      <div class="d-grid col-12 mx-auto button-box">
+      <div class="d-grid col-12 px-md-2 mx-auto button-box">
         <button class="btn btn-primary" type="button">GitHub</button>
         <button class="btn btn-primary" type="button">Frontend Mentor</button>
         <button class="btn btn-primary" type="button">LinkedIn</button>
@@ -72,7 +102,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">CrownedTechie</a>.
+    Coded by <a href="https://github.com/CrownedTechie">CrownedTechie</a>.
   </div>
 </body>
 </html>
